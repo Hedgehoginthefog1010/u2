@@ -4,7 +4,8 @@ class CofTitle extends StatelessWidget {
       final String coffeName;
       final String coFeprice;
       const CofTitle(
-      {required this.coffeImagesPath,
+      {
+        required this.coffeImagesPath,
         required this.coffeName,
         required this.coFeprice,
         super.key});
@@ -16,7 +17,7 @@ class CofTitle extends StatelessWidget {
         width: 200,
         decoration: BoxDecoration(
           borderRadius:  BorderRadius.circular(12),
-          color: Colors.deepPurple,
+          color: Colors.deepPurple.withOpacity(0.65),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,13 +58,22 @@ class CofTitle extends StatelessWidget {
             ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
-              ),
-
-          ],
+                children: [
+                  Text('$coFeprice ₽'),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    decoration: BoxDecoration(
+                      color: Colors.brown[233],
+                      borderRadius: BorderRadius.circular(6),
+                    ),
+                    child: const Icon(Icons.add),
+                  )
+                ]),
+            )],
         ),
-      ),
+        )
       );
+
     }
 
 
