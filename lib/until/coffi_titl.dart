@@ -39,7 +39,7 @@ class CofTitle extends StatelessWidget {
                   Text(coffeName,
                   style: const TextStyle(
                     fontSize: 20),
-                  ) ],
+                  ) ,
                 const SizedBox(
                   height: 4,
                 ),
@@ -49,12 +49,21 @@ class CofTitle extends StatelessWidget {
                     color: Colors.orange.withOpacity(0.75)
                   ),
                 )
-              )
-              )
+    ]
+              ),
+              ),
+            Padding(padding: const EdgeInsets.symmetric(
+              horizontal: 10.0
+            ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+              ),
 
           ],
         ),
-      ),);
+      ),
+      );
     }
 
 
