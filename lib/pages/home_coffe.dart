@@ -89,13 +89,29 @@ class _HomeCoffState extends State<HomeCoff> {
         Expanded(child: ListView(
             scrollDirection: Axis.horizontal,
           children: const [
-            HomeCoff(
+            CofTitle(
                 coffeImagesPath:'assets/latte.jpg',
-              coffeName:'Латте',
-              coffePrice:'125',
+                coffeName:'Латте',
+                coFeprice:'125',
+            ),
+              CofTitle(
+        coffeImagesPath:'assets/capp.jpg',
+         coffeName:'Капучино',
+         coFeprice:'100',
+              ),
+            CofTitle(
+              coffeImagesPath:'assets/mokko.jpg',
+              coffeName:'Мокко',
+              coFeprice:'85',
+            ),
+            CofTitle(
+              coffeImagesPath:'assets/americano.jpg',
+              coffeName:'Американо',
+              coFeprice:'111',
             ),
           ],
-        ))
+        ),
+        )
       ],
       ),
     );

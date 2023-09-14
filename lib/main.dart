@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:u2/pages/home_coffe.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,8 +9,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
-    return const MaterialApp(
-      home: MYAPP(),
+    return MaterialApp(
+     debugShowCheckedModeBanner: false,
+      home: const HomeCoff(),
+      theme:
+      ThemeData(brightness: Brightness.dark, primaryColor: Colors.blueAccent),
     );
   }
 }
