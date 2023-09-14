@@ -46,7 +46,7 @@ class _HomeCoffState extends State<HomeCoff> {
         Padding(padding: const EdgeInsets.symmetric( horizontal: 25.0),
         child: Text('Кофе для хорошего настроения',
         style: TextStyle(
-          color: Colors.white10,
+          color: Colors.red.shade50,
           fontSize:24,),
         ),
         ),
